@@ -43,11 +43,11 @@
       .cardTitle { fill: #34483B; font-size: 20px; font-weight: 700; letter-spacing: 0; }
       .cardBody { fill: #6A746B; font-size: 14px; font-weight: 500; letter-spacing: 0; }
       .tag { fill: #7B6F62; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; }
-      .fade { opacity: 0; animation: fadeLoop 3s ease-in-out infinite; }
-      .rise { opacity: 0; transform: translateY(14px); animation: riseLoop 3s cubic-bezier(.2,.8,.2,1) infinite; }
+      .fade { opacity: 0; animation: fadeLoop 9s ease-in-out infinite; }
+      .rise { opacity: 0; transform: translateY(14px); animation: riseLoop 9s cubic-bezier(.2,.8,.2,1) infinite; }
       .driftA { animation: driftA 8s ease-in-out infinite; }
       .driftB { animation: driftB 10s ease-in-out infinite; }
-      .draw { stroke-dasharray: 720; stroke-dashoffset: 720; animation: drawLoop 3s ease-in-out infinite; }
+      .draw { stroke-dasharray: 720; stroke-dashoffset: 720; animation: drawLoop 9s ease-in-out infinite; }
       .breathe { animation: breathe 5.6s ease-in-out infinite; transform-origin: center; }
       .delay1 { animation-delay: 160ms; }
       .delay2 { animation-delay: 380ms; }
