@@ -15,11 +15,3 @@
 | [wangkang1019](https://github.com/wangkang1019) | [163 Mail](mailto:wangkang19971019@163.com) | [Gmail](mailto:wangkang19971019@gmail.com) | [抖音](https://v.douyin.com/oUm7T8S3VdI/) |
 
 </div>
-
----
-
-<div align="center">
-
-Stay curious. Keep building. Bring AI closer to the real world.
-
-</div>
