@@ -43,20 +43,32 @@
       .cardTitle { fill: #34483B; font-size: 20px; font-weight: 700; letter-spacing: 0; }
       .cardBody { fill: #6A746B; font-size: 14px; font-weight: 500; letter-spacing: 0; }
       .tag { fill: #7B6F62; font-size: 13px; font-weight: 700; letter-spacing: 1.6px; }
-      .fade { opacity: 0; animation: fade 900ms ease-out forwards; }
-      .rise { opacity: 0; transform: translateY(14px); animation: rise 900ms cubic-bezier(.2,.8,.2,1) forwards; }
+      .fade { opacity: 0; animation: fadeLoop 3s ease-in-out infinite; }
+      .rise { opacity: 0; transform: translateY(14px); animation: riseLoop 3s cubic-bezier(.2,.8,.2,1) infinite; }
       .driftA { animation: driftA 8s ease-in-out infinite; }
       .driftB { animation: driftB 10s ease-in-out infinite; }
-      .draw { stroke-dasharray: 720; stroke-dashoffset: 720; animation: draw 2.8s ease-out forwards; }
+      .draw { stroke-dasharray: 720; stroke-dashoffset: 720; animation: drawLoop 3s ease-in-out infinite; }
       .breathe { animation: breathe 5.6s ease-in-out infinite; transform-origin: center; }
       .delay1 { animation-delay: 160ms; }
       .delay2 { animation-delay: 380ms; }
       .delay3 { animation-delay: 620ms; }
       .delay4 { animation-delay: 860ms; }
       .delay5 { animation-delay: 1120ms; }
-      @keyframes fade { to { opacity: 1; } }
-      @keyframes rise { to { opacity: 1; transform: translateY(0); } }
-      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes fadeLoop {
+        0%, 8% { opacity: 0; }
+        26%, 88% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      @keyframes riseLoop {
+        0%, 10% { opacity: 0; transform: translateY(14px); }
+        32%, 88% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(14px); }
+      }
+      @keyframes drawLoop {
+        0%, 8% { stroke-dashoffset: 720; }
+        48%, 88% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 720; }
+      }
       @keyframes breathe { 0%,100% { transform: scale(1); opacity: .62; } 50% { transform: scale(1.035); opacity: .86; } }
       @keyframes driftA { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(12px,-12px) rotate(1.5deg); } }
       @keyframes driftB { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(-10px,14px) rotate(-1.2deg); } }
